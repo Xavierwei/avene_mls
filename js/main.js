@@ -1,4 +1,12 @@
 
+// nav tab event
+$('.nav-btn').on('click' , function(){
+  $(this).next().show();
+  return false;
+});
+$(document).on('click' , function(){
+  $('header nav').hide();
+})
 
 // move the more link after picture
 var windowResize = function(){
@@ -47,11 +55,10 @@ $('#video').fancybox({
         scrolling : false,
         padding: 0,
         scrolling: 'no'
-      }); 
+      });
   $("#backbtn").click(function(){
     parent.$.fancybox.close();
   });
-
 
 //mail
 var SetMailForm=function(form,afterComplete){
@@ -77,7 +84,7 @@ var SetMailForm=function(form,afterComplete){
         afterComplete(xhr)
       }
     }
-  });  
+  });
   form.validate(
   {
     rules: {
