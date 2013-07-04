@@ -1,5 +1,4 @@
 /* reset css */
-
 html, body, p, h1, h2, h3, h4, h5, h6,
 ul, li, ol, dl, dd, dt,
 form, fieldset, legend, img {
@@ -76,6 +75,7 @@ a {
 /* Common */
 body {background:#fff6f4;}
 header {background:#fff;border-bottom:1px solid #f8cec3;height:75px;}
+header .nav-btn{display: none;}
 header .header_wrap {max-width:1000px;margin:0 auto;}
 header .logo {margin:8px 0 0 15px;background:url(../images/pc/logo.png) no-repeat;width:135px;height:61px;float:left;text-indent:-999em;}
 header nav {float:right;margin:30px 0 0;}
@@ -298,4 +298,30 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .star_wrap .product .price {margin:0 auto;background:none;width:153px;height:41px;text-indent:0;}
     .star_wrap .product .learnmore {margin:15px auto 0 auto;display:block;background:url(../images/pc/learnmore.png) no-repeat;width:108px;height:29px;display:block;text-indent:0;}
     .star_wrap .product .product_image {float:right;background:url(../images/pc/star_product_img.png) no-repeat;width:343px;height:388px;}
+}
+
+@media screen and (max-width:480px){
+    header .nav-btn{display: block;height:4px;width:29px;
+        float:right;
+        margin: 14px 15px 0 0;
+        position: relative;
+        border-left: 16px solid #f69f8c;
+        border-right: 16px solid #f69f8c;
+        border-top: 22px solid #f69f8c;
+        border-bottom: 22px solid #f69f8c;}
+    header .nav-btn:after,header .nav-btn:before{
+        content: ' ';
+        position: absolute;
+        height: 4px;
+        width: 29px;
+        top: 10px;
+        background: white;
+    }
+    header .nav-btn:before{
+        top: -10px;
+    }
+    header nav a{
+        display: block;
+        float: none;
+    }
 }
