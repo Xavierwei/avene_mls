@@ -85,10 +85,10 @@ header nav {float:right;margin:30px 0 0;}
     header nav a.nav2 {width:127px;background-position: -75px 4px;}
     header nav a.nav3 {width:127px;background-position: -218px 4px;}
     header nav a.nav4 {width:126px;background-position: -362px 4px;}
-    header nav a.nav1:hover {width:55px;background-position: -4px -41px;}
-    header nav a.nav2:hover {width:127px;background-position: -75px -41px;}
-    header nav a.nav3:hover {width:127px;background-position: -218px -41px;}
-    header nav a.nav4:hover {width:126px;background-position: -362px -41px;}
+    header nav a.nav1:hover,header nav a.nav1.active {width:55px;background-position: -4px -41px;}
+    header nav a.nav2:hover,header nav a.nav2.active {width:127px;background-position: -75px -41px;}
+    header nav a.nav3:hover,header nav a.nav3.active {width:127px;background-position: -218px -41px;}
+    header nav a.nav4:hover,header nav a.nav4.active {width:126px;background-position: -362px -41px;}
 }
 
 footer {background:url(../images/pc/footer_bg.gif) repeat-x;border-top:1px solid #f9ddd1;height:48px;position: fixed;bottom:0;left:0;width:100%;}
@@ -124,7 +124,9 @@ footer .nav6 #okbtn {background:url(../images/pc/footer_nav6.png) no-repeat;widt
 .clansing_wrap {margin:0 auto;width:970px;padding:68px 15px 150px 15px;}
 .clansing_wrap .girl {float:left;}
 .clansing_wrap .right_box {float:right;margin:77px 43px 0 0;}
+.clansing_wrap h1.mobile {display: none;}
 .clansing_wrap h1 {background:url(../images/pc/clansing_h1.png) no-repeat;width:124px;height:29px;text-indent:-999em;}
+.clansing_wrap .right_box img {width:446px;height:377px;}
 .clansing_wrap .features {padding:75px 0 0;min-width:1044px;}
 .clansing_wrap .feature {margin:40px 0;}
 .clansing_wrap .feature .title {border-bottom:1px solid #ffdcd3;padding:0 0 5px 0;margin:0 0 5px 0;}
@@ -137,10 +139,14 @@ footer .nav6 #okbtn {background:url(../images/pc/footer_nav6.png) no-repeat;widt
 .clansing_wrap .leanmore {background:url(../images/pc/learnmore.png) no-repeat;width:108px;height:29px;text-indent:-999em;float:right;}
 .clansing_wrap .feature_product {float:right;background:url(../images/pc/clansing_product.png) no-repeat;width:400px;height:541px;}
 .clansing_wrap .leftbox {float:left;margin:40px 0 0;}
-section nav a {float:left;height:55px;background:url(../images/common/section_nav_arrow.png) no-repeat;}
-
+section nav {float:right;}
+section nav a {float:left;height:55px;background:#fffcfb url(../images/common/section_nav_arrow.png) no-repeat right;border:1px solid #ffe4dd;}
+section nav a span {margin:20px 75px 0 20px;}
+section nav a.plan span {display: block;background:url(../images/common/section_nav.png) no-repeat -181px 0;width:107px;height:18px;text-indent:-999em;}
+section nav a.star span {display: block;background:url(../images/common/section_nav.png) no-repeat -363px 0;width:107px;height:18px;text-indent:-999em;}
+section nav a.cleansing span {display: block;background:url(../images/common/section_nav.png) no-repeat;width:107px;height:18px;text-indent:-999em;}
 /* Plan */
-.plan_wrap {max-width:1000px;margin:0 auto;padding:0 15px;}
+.plan_wrap {max-width:1000px;margin:0 auto;padding:0 15px 200px 15px;}
 .plan_wrap h1 {background:#fffbfa url(../images/pc/plan_h1.png) no-repeat center center;height:144px;text-indent:-999em;border:1px solid #ffebe6;margin:54px 0 168px 0;}
 .steps {max-width:800px;margin:0 auto;}
 .step .product {position: absolute;top:-124px;left:-127px;}
@@ -182,7 +188,7 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
 .plan_wrap .notes div {display:none;}
 
 /* Star */
-.star_wrap {width:1000px;margin:0 auto;padding:0 0 120px 0}
+.star_wrap {width:1000px;margin:0 auto;padding:0 0 140px 0}
 .star_wrap h1 {background:url(../images/pc/star_h1.png) no-repeat center;height:35px;text-indent:-999em;margin:74px 0 65px 0;}
 .star_box {width:476px;float:left;margin:0 12px;text-align: center;}
 .star_box .image img {width:266px;height:266px;}
@@ -202,7 +208,7 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
 .star_box2 .tips {background:url(../images/pc/star_tips_2.png) no-repeat;width:476px;height:96px;}
 
 .star_wrap .product_intro {width:460px;text-align:center;float:left;margin-top:50px;}
-.star_wrap .product {border-top:1px solid #ffccc1;margin:92px 0 0 0;padding:58px 49px 0 49px;}
+.star_wrap .product {border-top:1px solid #ffccc1;margin:92px 0 0 0;padding:58px 49px 58px 49px;}
 .star_wrap .product h2 {margin:0 auto;background:url(../images/pc/star_product_h2.png) no-repeat;width:287px;height:35px;text-indent:-999em;}
 .star_wrap .product .content {margin:30px auto;background:url(../images/pc/star_product_c.png) no-repeat;width:454px;height:96px;text-indent:-999em;}
 .star_wrap .product .price {margin:0 auto;background:url(../images/pc/star_product_price.png) no-repeat;width:153px;height:41px;text-indent:-999em;}
@@ -212,7 +218,25 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
 /* iPad */
 
 @media screen and (max-width:768px){
-    .home_nav li {margin:0 12px;}
+    header nav {float:right;margin:25px 0 0;}
+    header nav a {margin:0 5px;background:none;height:auto;padding:5px 10px;float:left;text-indent:0;font-size:18px;color:#f58874;}
+    header nav a.active {background:#f69f8c;color:#fff;}
+    header nav a.nav1 {width:auto;background-position: -4px 4px;}
+    header nav a.nav2 {width:auto;background-position: -75px 4px;}
+    header nav a.nav3 {width:auto;background-position: -218px 4px;}
+    header nav a.nav4 {width:auto;background-position: -362px 4px;}
+    header nav a.nav1:hover,header nav a.nav1.active {width:auto;background-position: -4px -41px;}
+    header nav a.nav2:hover,header nav a.nav2.active {width:auto;background-position: -75px -41px;}
+    header nav a.nav3:hover,header nav a.nav3.active {width:auto;background-position: -218px -41px;}
+    header nav a.nav4:hover,header nav a.nav4.active {width:auto;background-position: -362px -41px;}
+    header .logo {margin:8px 0 0 15px;background:url(../images/ipad/logo.png) no-repeat;background-size:135px 61px;width:135px;height:61px;float:left;text-indent:-999em;}
+    footer .nav1 {background:url(../images/ipad/footer_nav1.png) no-repeat center;background-size:203px 21px;width:203px;}
+    footer .nav6 #mobilemailinput {display:none;}
+    .home_wrap .focus_eye .right_box {right:20px;}
+    .home_wrap .focus_eye .girl img {display:block;width:auto;height:565px;margin-left:-80px;}
+    .home_wrap .focus_eye .title {margin:58px 20px 45px -20px;background:url(../images/pc/home_title.png) no-repeat;background-size:300px auto;width:300px;height:47px;text-indent:-999em;}
+    .home_wrap .focus_eye .feature img {display:block;width:auto;height:300px;}
+    .home_nav li {margin:0 19px;}
     .home_nav li a.nav1,.home_nav li a.nav2,.home_nav li a.nav3 {background-size:217px 119px;width:217px;height:119px;}
     .clansing_wrap {color:#ef896f;min-width:inherit;width:auto;}
     .clansing_wrap .focus_eye {width:738px;}
@@ -230,11 +254,15 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .clansing_wrap .feature1 .content {background:none;width:auto;height:auto;text-indent:0em;}
     .clansing_wrap .feature2 .content {background:none;width:auto;height:auto;text-indent:0em;}
     .clansing_wrap .feature3 .content {background:none;width:auto;height:auto;text-indent:0em;}
-    .clansing_wrap .leanmore {background:url(../images/pc/learnmore.png) no-repeat;width:108px;height:29px;text-indent:-999em;float:right;}
+    .clansing_wrap .leanmore {background:url(../images/ipad/learnmore.png) no-repeat;background-size:100px auto;width:100px;height:29px;text-indent:-999em;float:right;}
     .clansing_wrap .feature_product {float:right;background-size:368px 452px;width:368px;height:452px;}
     .clansing_wrap .leftbox {float:none;margin:0 390px 0 0;}
-    section nav a {float:left;height:55px;background:url(../images/common/section_nav_arrow.png) no-repeat;}
-
+    section nav {float:right;}
+    section nav a {float:left;height:55px;background:#fffcfb url(../images/common/section_nav_arrow.png) no-repeat right;border:1px solid #ffe4dd;}
+    section nav a span {margin:20px 75px 0 20px;font-size:18px;color:#6f6f6f;}
+    section nav a.plan span {display: block;background:none;width:auto;height:18px;text-indent:0em;}
+    section nav a.star span {display: block;background:none;width:auto;height:18px;text-indent:0em;}
+    section nav a.cleansing span {display: block;background:none;width:auto;height:18px;text-indent:0em;}
 
     .plan_wrap {max-width:inherit;min-width:inherit;margin:0 auto;color:#ef896f;}
     .plan_wrap h1 {background:#fffbfa;height:100px;line-height:100px;font-size:36px;text-align:center;border:1px solid #ffebe6;text-indent:0;margin:54px 0 168px 0;}
@@ -248,10 +276,10 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .step2,.step4 {float:right;margin:0 100px 220px 0;padding:38px 65px 38px 40px;}
     .step4 {margin-bottom:100px;margin-right:120px;}
     .step .title {position: absolute;top:-64px;left:68px;}
-    .step1 .title {background:url(../images/pc/plan_s1.png) no-repeat;width:258px;height:56px;}
-    .step2 .title {background:url(../images/pc/plan_s2.png) no-repeat;width:267px;height:56px;right:auto;left:40px;}
-    .step3 .title {background:url(../images/pc/plan_s3.png) no-repeat;width:268px;height:56px;}
-    .step4 .title {background:url(../images/pc/plan_s4.png) no-repeat;width:270px;height:57px;right:auto;left:40px;}
+    .step1 .title {background:url(../images/ipad/plan_s1.png) no-repeat center;background-size:auto 56px;width:258px;height:56px;}
+    .step2 .title {background:url(../images/ipad/plan_s2.png) no-repeat center;background-size:auto 56px;width:267px;height:56px;right:auto;left:40px;}
+    .step3 .title {background:url(../images/ipad/plan_s3.png) no-repeat center;background-size:auto 56px;width:268px;height:56px;}
+    .step4 .title {background:url(../images/ipad/plan_s4.png) no-repeat center;background-size:auto 56px;width:270px;height:57px;right:auto;left:40px;}
     .step h2 {text-indent:0;margin:0 0 17px 0;font-size:36px;}
     .step1 h2 {background:none;width:auto;height:auto;}
     .step2 h2 {background:none;width:auto;height:auto;}
@@ -273,7 +301,7 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .step2 .price span {background:none;width:auto;height:auto;}
     .step3 .price span {background:none;width:auto;height:auto;}
     .step4 .price span {background:none;width:auto;height:auto;}
-    .step .learnmore {display:block;background:url(../images/pc/learnmore.png) no-repeat;width:108px;height:29px;display:block;text-indent:-999em;}
+    .step .learnmore {display:block;background:url(../images/ipad/learnmore.png) no-repeat;background-size:100px auto;width:100px;height:29px;display:block;text-indent:-999em;}
     .plan_wrap .notes {background:none;width:auto;height:auto;text-indent:0;border-top:1px solid #fbd1c7;padding:10px 0 0 40px;font-size:14px;color:#999;}
     .plan_wrap .notes div {display:block;}
 
@@ -286,23 +314,23 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .star_box .name div {display:block;}
     .star_box1 .name {background:none;width:auto;height:auto;}
     .star_box2 .name {background:none;width:auto;height:auto;}
-    .star_box .say {margin:0 auto;font-size:20px;}
+    .star_box .say {margin:0 auto;font-size:20px;line-height: 120%}
     .star_box .say div {display:block;}
     .star_box1 .say {background:none;width:auto;height:65px;}
     .star_box2 .say {background:none;width:auto;height:65px;}
     .star_box h3 {margin-top:20px;text-indent:0;width:auto;background:#f69f8c;color:#fff;padding:9px 0 4px 13px;font-size:18px;text-align: left;}
     .star_box1 h3 {background:#f69f8c;height:auto;}
     .star_box2 h3 {background:#f69f8c;height:auto;}
-    .star_box .tips {text-indent:0;margin:18px 0 0;color:#8e8e8e;font-size:18px;text-align: left;}
+    .star_box .tips {text-indent:0;margin:18px 0 0;color:#8e8e8e;font-size:18px;text-align: left;line-height: 130%}
     .star_box1 .tips {background:none;width:auto;height:auto;}
     .star_box2 .tips {background:none;width:auto;height:auto;}
 
     .star_wrap .product_intro {width:369px;text-align:center;float:left;margin:40px 0 0 40px;}
-    .star_wrap .product {border-top:1px solid #ffccc1;margin:92px 0 0 0;padding:58px 0 0 0;}
+    .star_wrap .product {border-top:1px solid #ffccc1;margin:92px 0 40px 0;padding:58px 0 0 0;}
     .star_wrap .product h2 {margin:0 auto;background:none;width:auto;height:35px;text-indent:0;font-size:30px;}
-    .star_wrap .product .content {margin:30px auto;background:none;width:auto;height:96px;text-indent:0;font-size:18px;color:#8e8e8e;}
+    .star_wrap .product .content {margin:30px auto;background:none;width:auto;height:96px;text-indent:0;font-size:18px;color:#8e8e8e;line-height: 130%}
     .star_wrap .product .price {margin:0 auto;background:#f69f8c;width:153px;height:41px;text-indent:0;font-size:18px;color:#fff;line-height:41px;}
-    .star_wrap .product .learnmore {margin:15px auto 0 auto;display:block;background:url(../images/pc/learnmore.png) no-repeat;width:108px;height:29px;display:block;}
+    .star_wrap .product .learnmore {margin:15px auto 0 auto;display:block;background:url(../images/ipad/learnmore.png) no-repeat;background-size:100px auto;width:100px;height:29px;display:block;}
     .star_wrap .product .product_image {float:right;margin-right:40px;background-size:300px 339px;width:300px;height:339px;}
 }
 
@@ -318,10 +346,10 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     header nav a:last-child{border-bottom: none;}
 
     /* footer */
-    footer{height:auto;background: #fff4f2;position: static;margin-top: 30px;border-top: none;}
+    footer{height:auto;background: #fff4f2;border-top: none;}
     footer nav{width:100%;}
     footer .nav1{width:auto;float:none;display:block;background: none;text-indent: 0;text-align: center;color: white;background:#ed1b23;border-radius: 5px;-moz-border-radius:5px;
-        margin: 13px 27px;height:28px;line-height: 28px;font-size: 16px;
+        margin: 13px 27px;height:58px;line-height: 58px;font-size: 32px;
     }
     footer .nav2,footer .nav5,footer .nav6{
         width: 50%;
@@ -366,21 +394,31 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .home_nav{width: 100%;}
 
     /* cleansing */
-    .clansing_wrap{margin:20px;padding:0;text-align:center;}
+    .clansing_wrap{margin:20px;padding:0 0 300px 0;text-align:center;}
     .clansing_wrap .focus_eye{width: auto;}
     .clansing_wrap .right_box{
         float: none;
     }
-    .clansing_wrap .right_box img{max-width: 446px;width:100%;height: auto;margin-top: 40px;}
+    .clansing_wrap .right_box img{width:90%;height: auto;margin-top: 40px;}
     .clansing_wrap .girl{float:none;}
     .clansing_wrap .girl img{
-        max-width: 367px;
-        width: 100%;
+        width: 90%;
         height: auto;
     }
+    .clansing_wrap .feature_product {float:none;background-size:400px 492px;width:400px;height:492px;margin:0 auto;}
+    .clansing_wrap .leftbox {float:none;margin:0;text-align: left;}
+    .clansing_wrap .feature {text-align: left;}
 
+    .clansing_wrap h1 {display:none;}
+    .clansing_wrap h1.mobile {display: block;text-align: left;line-height: 100%;font-size:60px;margin:0 0 40px 0;}
+    .clansing_wrap .feature .title {border-bottom:1px solid #ffdcd3;padding:0 0 5px 0;margin:0 0 9px 0;line-height:120%;font-size:40px;font-weight: bold;}
+    .clansing_wrap .feature .content {font-size:36px;color:#f3a998;line-height:120%;}
+    .clansing_wrap .leanmore {background:url(../images/ipad/learnmore.png) no-repeat;background-size:200px auto;width:200px;height:49px;display:block;}
+    section nav {float:right;margin:40px 25px 0 0;}
+    section nav a {float:left;height:55px;background:#fffcfb url(../images/common/section_nav_arrow.png) no-repeat right;border:1px solid #ffe4dd;}
+    section nav a span {margin:20px 75px 0 20px;font-size:30px;color:#6f6f6f;}
 
-    .plan_wrap {max-width:inherit;min-width:inherit;margin:0 auto;color:#ef896f;}
+    .plan_wrap {max-width:inherit;min-width:inherit;margin:0 auto;color:#ef896f;padding-bottom: 350px;}
     .plan_wrap h1 {background:#fffbfa;height:187px;line-height:187px;font-size:60px;text-align:center;border:1px solid #ffebe6;text-indent:0;margin:54px 0;}
     .steps {max-width:inherit;margin:0 auto;}
     .step .product {position:relative;left:auto;top:auto;margin:0 auto;}
@@ -423,7 +461,7 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .plan_wrap .notes div {display:block;}
 
     /* Star */
-    .star_wrap {width:590px;margin:0 auto;color:#ef896f;padding:0 25px;}
+    .star_wrap {width:590px;margin:0 auto;color:#ef896f;padding:0 25px 350px 25px;}
     .star_wrap h1 {background:none;height:35px;text-indent:0em;margin:74px 0 65px 0;font-size:44px;text-align: center;}
     .star_wrap h1 strong {font-weight:bolder;}
     .star_box {width:auto;float:none;margin:0 auto 100px auto;text-align: center;}
@@ -451,5 +489,5 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
     .star_wrap .product .learnmore {position:absolute;top:940px;left:50%;margin:0 0 0 -90px;display:block;background:url(../images/ipad/learnmore.png) no-repeat;background-size:200px auto;width:200px;height:49px;display:block;}
     .star_wrap .product .product_image {float:none;margin:0 auto;background:url(../images/m/star_product_img.png) no-repeat;background-size:460px 522px;width:460px;height:522px;}
 
-
+    .star_wrap section nav {float:right;margin: 0 0;}
 }
