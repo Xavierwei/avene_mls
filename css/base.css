@@ -126,6 +126,7 @@ footer .nav6 #okbtn {background:url(../images/pc/footer_nav6.png) no-repeat;widt
 .clansing_wrap .right_box {float:right;margin:77px 43px 0 0;}
 .clansing_wrap h1 {background:url(../images/pc/clansing_h1.png) no-repeat;width:124px;height:29px;text-indent:-999em;}
 .clansing_wrap .features {padding:75px 0 0;min-width:1044px;}
+.clansing_wrap .features > h1{display: none;}
 .clansing_wrap .feature {margin:40px 0;}
 .clansing_wrap .feature .title {border-bottom:1px solid #ffdcd3;padding:0 0 5px 0;margin:0 0 5px 0;}
 .clansing_wrap .feature1 .title {background:url(../images/pc/clansing_h2_1.png) no-repeat;height:20px;text-indent:-999em;}
@@ -377,6 +378,8 @@ section nav a {float:left;height:55px;background:url(../images/common/section_na
         width: 100%;
         height: auto;
     }
-
+    .clansing_wrap .feature_product{float:none;}
+    .clansing_wrap .features > h1{text-align:left;display: block;margin:20px 0 45px;}
+    .clansing_wrap .features .leftbox h1{display: none;}
 
 }
