@@ -364,7 +364,7 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     header .nav-btn:before{top: -10px;}
     header nav:before{position: absolute;content: ' ';top: -14px;right: 20px;border-bottom: 14px solid #f69f8c;border-left: 10px solid transparent;border-right: 10px solid transparent;}
     header nav{display:none;background: #F69F8C;color: #FFF;position: absolute;right: 15px;top: 50px;left: 15px;z-index: 1;}
-    header nav a{display: block;float: none;border-bottom: 1px solid #FFF;font-size: 18px;line-height: 40px;margin: 0 3px;padding-left: 15px;}
+    header nav a{color:#fff;display: block;float: none;border-bottom: 1px solid #FFF;font-size: 32px;line-height: 60px;margin: 0 3px;padding-left: 15px;}
     header nav a:last-child{border-bottom: none;}
 
     /* footer */

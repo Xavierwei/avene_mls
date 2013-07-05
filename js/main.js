@@ -1,16 +1,19 @@
-
+var windowWidth
 // nav tab event
 $('.nav-btn').on('click' , function(){
   $(this).next().show();
   return false;
 });
 $(document).on('click' , function(){
-  $('header nav').hide();
+    if(windowWidth <= 640)
+    {
+        $('header nav').hide();
+    }
 })
 
 // move the more link after picture
 var windowResize = function(){
-  var windowWidth = $(window).width();
+  windowWidth = $(window).width();
   var isMobile = 1;
   if(windowWidth <= 640)
   {
