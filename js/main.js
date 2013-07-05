@@ -1,13 +1,16 @@
 var windowWidth
 // nav tab event
 $('.nav-btn').on('click' , function(){
-  $(this).next().show();
+  if($(this).next().css('display')=='none')
+    $(this).next().fadeIn();
+  else
+    $(this).next().fadeOut();
   return false;
 });
 $(document).on('click' , function(){
     if(windowWidth <= 640)
     {
-        $('header nav').hide();
+        $('header nav').fadeOut();
     }
 })
 
@@ -65,6 +68,7 @@ $('#video').fancybox({
 
 //mail
 var SetMailForm=function(form,afterComplete){
+    console.log(form);
   form.ajaxForm({
     beforeSubmit:  function(){
         return form.valid();

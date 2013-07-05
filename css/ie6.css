@@ -1,0 +1,16 @@
+.header_wrap {width: 1000px;}
+.home_wrap {width:1000px;margin:0 auto;}
+.home_nav li {margin:0 10px;}
+.home_nav li a img {display:none;}
+.home_nav li a.nav1 {background:url(../images/pc/home_nav_1.png) no-repeat;width:300px;height:164px;}
+.home_nav li a.nav2 {background:url(../images/pc/home_nav_2.png) no-repeat;width:300px;height:164px;}
+.home_nav li a.nav3 {background:url(../images/pc/home_nav_3.png) no-repeat;width:300px;height:164px;}
+.clansing_wrap .leftbox {width:601px;}
+.clansing_wrap {width:1044px;padding-bottom:0;}
+.plan_wrap {width:980px;padding-bottom:0;}
+.star_wrap {padding-bottom:0;}
+.step .price {float:left;}
+.step .learnmore {clear:both;}
+.star_box {margin:0;}
+.step4 {margin-bottom: 0;}
+.clansing_wrap .leftbox h1 {display:none;}
