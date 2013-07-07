@@ -395,7 +395,7 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     header nav a:last-child{border-bottom: none;}
 
     /* footer */
-    footer{height:auto;background: #fff4f2;border-top: none;}
+    footer{height:auto;background: #fff4f2;border-top: none;position: relative;}
     footer nav{width:100%;}
 
     footer .nav1{width:auto;float:none;display:block;background: none;text-indent: 0;text-align: center;color: white;background:#ed1b23;border-radius: 5px;-moz-border-radius:5px;
@@ -425,7 +425,7 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     footer .nav6 #mobilemail {text-indent:0;background-position: right;width:150px;margin:43px 0 0 70px;}
     footer .nav6 #mobilemail label {display:block;font-size:28px;}
     /* index.page */
-    .home_wrap {padding:0 0 150px 0;}
+    .home_wrap {padding:0 0 0 0;}
     .home_wrap .focus_eye .girl{float:none;margin:0 auto;min-width: inherit;
 width: auto;}
     .home_wrap .focus_eye .girl img{
@@ -444,7 +444,7 @@ margin: 0 auto;max-width:none;}
     .home_wrap .focus_eye_wrap{border-bottom: none;}
     .home_wrap .focus_eye .feature{margin:50px auto;text-align: center;background:url(../images/pc/clansing_product.png) no-repeat;width:400px;height:492px;}
     .home_wrap .focus_eye .feature img {display:none;}
-    .home_nav {border-top:2px solid #ffe3de;padding:50px 0 0;}
+    .home_nav {border-top:2px solid #ffe3de;padding:50px 0 0;min-width:inherit;}
     .home_nav li{float:none;width: auto;margin: 0 auto;}
     .home_nav li a.nav1, .home_nav li a.nav2, .home_nav li a.nav3{
         margin: 0 auto;
@@ -461,7 +461,7 @@ margin: 0 auto;max-width:none;}
     .home_nav li a.nav2 {background:url(../images/m/home_nav_2.png) no-repeat;width:514px;height:282px;}
     .home_nav li a.nav3 {background:url(../images/m/home_nav_3.png) no-repeat;width:514px;height:282px;}
     /* cleansing */
-    .clansing_wrap{margin:20px;padding:0 0 300px 0;text-align:center;}
+    .clansing_wrap{margin:20px;padding:0 0 40px 0;text-align:center;}
     .clansing_wrap .focus_eye{width: auto;}
     .clansing_wrap .right_box{
         float: none;
@@ -491,7 +491,7 @@ margin: 0 auto;max-width:none;}
     section nav a {float:left;height:55px;background:#fffcfb url(../images/common/section_nav_arrow.png) no-repeat right;border:1px solid #ffe4dd;}
     section nav a span {margin:20px 75px 0 20px;font-size:30px;color:#6f6f6f;}
 
-    .plan_wrap {max-width:inherit;min-width:inherit;margin:0 auto;color:#ef896f;padding-bottom: 350px;}
+    .plan_wrap {max-width:inherit;min-width:inherit;margin:0 auto;color:#ef896f;padding-bottom: 40px;}
     .plan_wrap h1 {background:#fffbfa;height:187px;line-height:187px;font-size:60px;text-align:center;border:1px solid #ffebe6;text-indent:0;margin:54px 0;}
     .steps {max-width:inherit;margin:0 auto;}
     .step .product {position:relative;left:auto;top:auto;margin:0 auto;}
@@ -534,7 +534,7 @@ margin: 0 auto;max-width:none;}
     .plan_wrap .notes div {display:block;}
 
     /* Star */
-    .star_wrap {width:590px;margin:0 auto;color:#ef896f;padding:0 25px 350px 25px;}
+    .star_wrap {width:590px;margin:0 auto;color:#ef896f;padding:0 25px 40px 25px;}
     .star_wrap h1 {background:none;height:35px;text-indent:0em;margin:74px 0 65px 0;font-size:44px;text-align: center;}
     .star_wrap h1 strong {font-weight:bolder;}
     .star_box {width:auto;float:none;margin:0 auto 100px auto;text-align: center;}
