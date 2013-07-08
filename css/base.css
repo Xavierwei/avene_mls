@@ -277,12 +277,9 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     footer .nav6 form {display:none;}
     footer .nav6 #mobilemail {display:block;}
     .home_wrap .focus_eye .right_box {right:44px;}
-    .home_wrap .focus_eye .girl img {display:block;width:auto;height:565px;margin-left:-80px;}
     .home_wrap .focus_eye .title {margin:58px 20px 45px -20px;background:url(../images/pc/home_title.png) no-repeat;background-size:300px auto;width:300px;height:47px;text-indent:-999em;}
     .home_wrap .focus_eye .feature img {display:block;width:auto;height:300px;}
-    .home_nav {min-width:720px;}
-    .home_nav li {margin:0 19px;width:28%;}
-    .home_nav li a.nav1,.home_nav li a.nav2,.home_nav li a.nav3 {background-size:217px 119px;width:217px;height:119px;}
+
 
     .clansing_wrap {color:#ef896f;min-width:inherit;width:auto;padding-bottom:200px;}
     .clansing_wrap .focus_eye {width:738px;}
