@@ -416,7 +416,7 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     footer span, footer a{padding:0;color:#f6ab89;height:97px;}
     .no-touch footer span, .no-touch footer a{padding:0;height:46px;}
     footer .nav1{width:auto;float:none;display:block;background: none;text-indent: 0;text-align: center;color: white;background:#ed1b23;border-radius: 5px;-moz-border-radius:5px;
-        margin: 13px 27px;height:58px;line-height: 58px;font-size: 2.7em;}
+        margin: 13px 27px;height:58px;line-height: 51px;font-size: 2.7em;}
     .no-touch footer .nav1 {font-size:18px;}
     body footer a.nav3,body footer a.nav4{width:25%;margin-right:-1px;}
     footer .nav2,
@@ -429,20 +429,20 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     footer form{text-align: center;font-size: 16px;}
     footer form label{margin-right: 10px;vertical-align: middle;}
 
-    footer .nav2 {background:url(../images/m/footer_nav2x2.png) no-repeat center;}
-    footer .nav3 {background:url(../images/m/footer_nav3x2.png) no-repeat center;}
-    footer .nav4 {background:url(../images/m/footer_nav4x2.png) no-repeat center;}
-    footer .nav5 {background:url(../images/m/footer_nav5x2.png) no-repeat center;}
+    footer .nav2 {background:url(../images/m/footer_nav2x2.png) no-repeat center;background-size:auto 54px;}
+    footer .nav3 {background:url(../images/m/footer_nav3x2.png) no-repeat center;background-size:auto 54px;}
+    footer .nav4 {background:url(../images/m/footer_nav4x2.png) no-repeat center;background-size:auto 54px;}
+    footer .nav5 {background:url(../images/m/footer_nav5x2.png) no-repeat center;background-size:auto 54px;}
     .no-touch footer .nav2 {background:url(../images/m/footer_nav2.png) no-repeat center;}
     .no-touch footer .nav3 {background:url(../images/m/footer_nav3.png) no-repeat center;}
     .no-touch footer .nav4 {background:url(../images/m/footer_nav4.png) no-repeat center;}
     .no-touch footer .nav5 {background:url(../images/m/footer_nav5.png) no-repeat center;}
 
     footer .nav6 #mobilemailinput{display: none;}
-    footer .nav6 #mobilemail {text-indent:0;background:url(../images/m/footer_nav6x2.png) no-repeat center;background-position: right;width:160px;margin:35px 0 0 70px;height:30px;line-height: 30px;}
-    .no-touch footer .nav6 #mobilemail {font-size:75px;margin: 15px 0 0 45px;width:100px;background-size:20px 15px;}
-    footer .nav6 #mobilemail label {display:block;font-size:28px;}
-    .no-touch footer .nav6 #mobilemail label  {font-size:14px;}
+    footer .nav6 #mobilemail {border:none;text-indent:0;background:url(../images/m/footer_nav6x2.png) no-repeat center;background-position: right;width:180px;margin:35px 0 0 70px;height:30px;line-height: 30px;}
+    .no-touch footer .nav6 #mobilemail {font-size:75px;margin: 10px 0 0 75px;width:90px;background-size:20px 15px;line-height:32px;}
+    footer .nav6 #mobilemail label {display:block;font-size:31px;}
+    .no-touch footer .nav6 #mobilemail label  {font-size:15px;}
     /* index.page */
     .home_wrap {padding:0 0 0 0;}
     .home_wrap .focus_eye .girl{float:none;margin:0 auto;min-width: inherit;
