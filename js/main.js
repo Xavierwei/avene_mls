@@ -18,7 +18,7 @@ $(document).on('click' , function(){
 var windowResize = function(){
   windowWidth = $(window).width();
   var isMobile = 1;
-  if(windowWidth <= 640)
+  if(windowWidth < 640)
   {
       $('.cs_item').each(function(){
           var picWrap = $(this).find('div').eq(0);
@@ -30,7 +30,26 @@ var windowResize = function(){
       if (viewportmeta) {
           viewportmeta.content = 'width=640, minimum-scale=0.5, maximum-scale=2.0';
       }
+
+      $('.home_wrap .home_nav img,.home_wrap .right_box img,.star_wrap .product_image img').each(function(){
+          var imgSource = $(this).attr('src');
+          var mobileImgSource = imgSource.replace('/common','/m');
+          mobileImgSource = imgSource.replace('/pc','/m');
+          $(this).attr('src', mobileImgSource);
+      });
+
+      $('.clansing_wrap .feature_product').html('<img src="./images/pc/clansing_product.png" />');
   }
+  else
+  {
+      $('.home_wrap .home_nav img,.home_wrap .right_box img,.star_wrap .product_image img').each(function(){
+          var imgSource = $(this).attr('src');
+          var mobileImgSource = imgSource.replace('/m','/pc');
+          $(this).attr('src', mobileImgSource);
+      });
+      $('.clansing_wrap .feature_product img').remove();
+  }
+
 
 };
 
