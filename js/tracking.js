@@ -1,54 +1,72 @@
-$('#nav a').eq(0).bind('click',function(){
-    ga('send', 'event', 'discover', 'BTN1', 'BTN1');
+$('nav a').eq(0).bind('click',function(){
+    ga('send', 'event', 'home', 'BTN1', 'BTN1');
 });
-$('#nav a').eq(1).bind('click',function(){
-    ga('send', 'event', 'product', 'BTN1', 'BTN1');
+$('nav a').eq(1).bind('click',function(){
+    ga('send', 'event', 'clean', 'BTN1', 'BTN1');
 });
-$('#nav a').eq(1).bind('click',function(){
-    ga('send', 'event', 'qa', 'BTN1', 'BTN1');
+$('nav a').eq(2).bind('click',function(){
+    ga('send', 'event', 'plan', 'BTN1', 'BTN1');
 });
-$('#videodiv #video').bind('click',function(){
-    ga('send', 'event', 'video', 'home_video1', 'home_video1');
+$('nav a').eq(3).bind('click',function(){
+    ga('send', 'event', 'star', 'BTN1', 'BTN1');
 });
 
-$('#footeraction a').eq(0).bind('click',function(){
+$('.home_nav a').eq(0).bind('click',function(){
+    ga('send', 'event', 'clean', 'BTN2', 'BTN2');
+});
+
+$('.home_nav a').eq(1).bind('click',function(){
+    ga('send', 'event', 'plan', 'BTN2', 'BTN2');
+});
+
+$('.home_nav a').eq(2).bind('click',function(){
+    ga('send', 'event', 'star', 'BTN2', 'BTN2');
+});
+
+$('footer a').eq(0).bind('click',function(){
     ga('send', 'event', 'Official', 'BTN1', 'BTN1');
 });
-$('#footeraction a').eq(1).bind('click',function(){
-    ga('send', 'event', 'Social', 'Sina', 'Sina');
+
+$('footer a').eq(1).bind('click',function(){
+    ga('send', 'event', 'Sina', 'BTN1', 'BTN1');
 });
 
-$('#footeraction a').eq(2).bind('click',function(){
-    ga('send', 'event', 'Social', 'Dermatologist', 'Dermatologist');
-});
-
-$('#footeraction a').eq(3).bind('click',function(){
+$('footer a').eq(2).bind('click',function(){
     ga('send', 'event', 'App', 'BTN1', 'BTN1');
 });
 
-$('#bottomproduct a').eq(0).bind('click',function(){
-    ga('send', 'event', 'hypersensive', 'BTN1', 'BTN1');
-});
-$('.dVideoWrap #video').bind('click',function(){
-    ga('send', 'event', 'video', 'discover_video1', 'discover_video1');
+$('footer a').eq(3).bind('click',function(){
+    ga('send', 'event', 'Apply', 'BTN1', 'BTN1');
 });
 
-$('.csLearnmore').eq(0).bind('click',function(){
-    ga('send', 'event', 'SW-page', 'thermal', 'thermal');
-});
-$('.csLearnmore').eq(1).bind('click',function(){
-    ga('send', 'event', 'SW-page', 'cleansing', 'cleansing');
-});
-$('.csLearnmore').eq(2).bind('click',function(){
-    ga('send', 'event', 'SW-page', 'soothing', 'soothing');
+$('section nav .cleansing').bind('click',function(){
+    ga('send', 'event', 'Star', 'BTN3', 'BTN3');
 });
 
-$('.nav_discover').bind('click',function(){
-    ga('send', 'event', 'discover', 'BTN2', 'BTN2');
+$('section nav .plan').bind('click',function(){
+    ga('send', 'event', 'Plan', 'BTN3', 'BTN3');
 });
-$('.nav_cs').bind('click',function(){
-    ga('send', 'event', 'product', 'BTN2', 'BTN2');
+
+$('section nav .star').bind('click',function(){
+    ga('send', 'event', 'Star', 'BTN3', 'BTN3');
 });
-$('.nav_faq').bind('click',function(){
-    ga('send', 'event', 'faq', 'BTN2', 'BTN2');
+
+$('.plan_wrap .learnmore').eq(0).bind('click',function(){
+    ga('send', 'event', 'Product', 'BTN1', 'BTN1');
+});
+
+$('.plan_wrap .learnmore').eq(1).bind('click',function(){
+    ga('send', 'event', 'Product', 'BTN2', 'BTN2');
+});
+
+$('.plan_wrap .learnmore').eq(2).bind('click',function(){
+    ga('send', 'event', 'Product', 'BTN3', 'BTN3');
+});
+
+$('.plan_wrap .learnmore').eq(3).bind('click',function(){
+    ga('send', 'event', 'Product', 'BTN4', 'BTN4');
+});
+
+$('.star_wrap .learnmore').bind('click',function(){
+    ga('send', 'event', 'Product', 'BTN5', 'BTN5');
 });

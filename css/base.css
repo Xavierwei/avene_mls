@@ -415,9 +415,8 @@ section nav a.cleansing span {display: block;background:url(../images/common/sec
     }
     footer span, footer a{padding:0;color:#f6ab89;height:97px;}
     .no-touch footer span, .no-touch footer a{padding:0;height:46px;}
-    footer .nav1{width:auto;float:none;display:block;background: none;text-indent: 0;text-align: center;color: white;background:#ed1b23;border-radius: 5px;-moz-border-radius:5px;
-        margin: 13px 27px;height:58px;line-height: 51px;font-size: 2.7em;}
-    .no-touch footer .nav1 {font-size:18px;}
+    footer .nav1 {background:url(../images/m/footer_nav1.png) no-repeat center;background-size:auto 50px;height:50px;display:block;width:auto;float:none;margin:0 0 20px 0;}
+    .no-touch footer .nav1 {background:url(../images/m/footer_nav1.png) no-repeat center;background-size:auto 28px;display:block;width:auto;margin:0;}
     body footer a.nav3,body footer a.nav4{width:25%;margin-right:-1px;}
     footer .nav2,
     footer .nav3,

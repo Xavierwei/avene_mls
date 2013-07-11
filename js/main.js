@@ -87,7 +87,6 @@ $('#video').fancybox({
 
 //mail
 var SetMailForm=function(form,afterComplete){
-    console.log(form);
   form.ajaxForm({
     beforeSubmit:  function(){
         return form.valid();
